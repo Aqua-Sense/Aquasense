@@ -1,5 +1,5 @@
 ![XGBoost Methodology](https://github.com/user-attachments/assets/d08b9afb-336e-4e48-a449-acb96ce40a5e)
-
+```
 ✅ Dataset loaded with shape: (100000, 10)
 
 📉 After Downsampling:
@@ -21,5 +21,5 @@ Name: count, dtype: int64
 weighted avg      0.881     0.864     0.862      2828
 
 XGBoost ROC AUC Score: 0.875
-
+```
 ![XGBoost Classification Feature Importance](https://github.com/user-attachments/assets/bfb8527b-8edc-4173-b4dc-dcb0194036cf)
