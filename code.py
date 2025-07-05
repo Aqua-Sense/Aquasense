@@ -75,3 +75,13 @@ y_probs = xgb_model.predict_proba(X_test_scaled)[:, 1]
 print("\n📋 XGBoost Classification Report:")
 print(classification_report(y_test, y_pred, digits=3))
 print(f"XGBoost ROC AUC Score: {roc_auc_score(y_test, y_probs):.3f}")
+
+importances = xgb_model.feature_importances_
+
+plt.figure(figsize=(10, 6))
+plt.barh(features, importances, color='skyblue')
+plt.xlabel('Feature Importance')
+plt.title('XGBoost Classification Feature Importance')
+plt.grid(True, linestyle='--', alpha=0.5)
+plt.tight_layout()
+plt.show()
